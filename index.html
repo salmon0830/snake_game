@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Neon Snake</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+    <div class="game-container">
+        <div class="ui-layer">
+            <div class="score-board">
+                <div class="score-label">SCORE</div>
+                <div class="score-value" id="score">0</div>
+            </div>
+            <div class="high-score-board">
+                <div class="score-label">BEST</div>
+                <div class="score-value" id="highScore">0</div>
+            </div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="startScreen" class="overlay">
+            <h1>NEON SNAKE</h1>
+            <p>Swipe to Move<br>Tap to Start</p>
+        </div>
+        <div id="gameOverScreen" class="overlay hidden">
+            <h1>GAME OVER</h1>
+            <p>Tap to Restart</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
